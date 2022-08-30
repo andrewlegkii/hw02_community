@@ -1,3 +1,4 @@
+from cgitb import text
 from django.contrib import admin
 
 from .models import Group, Post
