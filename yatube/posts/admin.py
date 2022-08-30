@@ -18,12 +18,5 @@ class GroupAdmin(admin.ModelAdmin):
     search_fields = ('title', 'description', 'slug')
 
 
-@admin.register(Post)
-@admin.register(PostAdmin)
-@admin.register(Group)
-@admin.register(GroupAdmin)
-class GroupAdmin(admin.ModelAdmin):
-    Post
-    PostAdmin
-    Group
-    GroupAdmin
+admin.site.register(Post, PostAdmin)
+admin.site.register(Group, GroupAdmin)
